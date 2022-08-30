@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mural"
+    }
+  },
+  "defaultProject": "mural",
+  "cli": {
+    "analytics": false
+  }
 }
