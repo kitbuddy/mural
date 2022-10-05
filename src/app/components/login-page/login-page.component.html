@@ -4,13 +4,13 @@
     <p-card>
     <h2>Login page</h2>
     <h3>User Id</h3>
-    <input [ngModel]="userID" id="userId" type="text">
+    <input [(ngModel)]="userID" id="userId" type="text">
     <br>
     <h3>Password</h3>
-    <input [ngModel]="password" aria-label="Password" id="password-label" type="password">
+    <input [(ngModel)]="password" id="password-label" type="password">
     <br>
     <div class="submitDiv">
-      <button (click)="authenticateUser(userID, password)" type="submit">Login</button>
+      <button (click)="authenticateUser()" type="submit">Login</button>
       <button (click)="clear(userID, password)">Cancel</button>
     </div>
     </p-card>

@@ -6,19 +6,28 @@ import {AppComponent} from './app.component';
 import {LoginPageComponent} from './components/login-page/login-page.component';
 import {FormsModule} from '@angular/forms';
 import {CardModule} from 'primeng/card';
+import {MessagesModule} from 'primeng/messages';
+import {MessageService} from 'primeng/api';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MessageModule} from 'primeng/message';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CardModule
+    CardModule,
+    MessagesModule,
+    BrowserAnimationsModule,
+    MessageModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
